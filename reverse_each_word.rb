@@ -1,7 +1,16 @@
-def reverse_each_word(string) #method takes in a string as an arguement
-  array = string.split(" ") #split converts our string into an array so we can use an enumerator
-  array.collect do |stg| #collect changes our return value
-    word.reverse! #reverse without changing order
+first_array = string.split (" ")
+return_array = []
+first_array.each do |string|
+  return_array << string.reverse 
+end
+return_array.join (" ")
+end
+
+def reverse_each_word(string)
+  array = string.split (" ") #split turns string into an array
+  test_array = [] #create empty array for new return
+  array.collect do |string|
+    test_array << string.reverse #reverse each word
   end
-  array.join(" ")
+  test_array.join (" ")
 end
